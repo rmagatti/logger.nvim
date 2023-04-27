@@ -38,6 +38,7 @@ logger:error("This is an error message.") -- Logs "my_prefix ERROR: This is an e
 -- Logging tables
 logger:debug("something", { something = "foo", bar = "baz" })
 
+-- output
 my_prefix DEBUG: something { something = "foo", bar = "baz" }
 ```
 
