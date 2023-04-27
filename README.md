@@ -2,6 +2,14 @@
 
 This plugin provides a logger class for logging messages via the `vim.notify` function in Neovim.
 It provides consistent logging and uses `vim.inspect` under the hood as well when possible to log tables.
+I kept copying this code over in my Neovim plugins, now I can just do:
+
+```lua
+use {
+    "rmagatti/my-beautiful-plugin",
+    requires = { "rmagatti/logger.nvim" }
+}
+```
 
 ## 🚀 Usage
 
