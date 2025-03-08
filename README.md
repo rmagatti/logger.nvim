@@ -16,7 +16,7 @@ use {
 To use the logger class, first require it in your Neovim Lua plugin:
 
 ```lua
-local Logger = require("logger").new({ log_level = "debug", prefix = "my_prefix" })
+local Logger = require("logger"):new({ log_level = "debug", prefix = "my_prefix" })
 ```
 
 You can optionally set the `log_level` and `prefix` using the setter functions:
