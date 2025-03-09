@@ -16,7 +16,7 @@ use {
 To use the logger class, first require it in your Neovim Lua plugin:
 
 ```lua
-local Logger = require("logger"):new({ log_level = "debug", prefix = "my_prefix" })
+local Logger = require("logger"):new({ log_level = "debug", prefix = "my_prefix", echo_messages = false })
 ```
 
 You can optionally set the `log_level` and `prefix` using the setter functions:
@@ -73,6 +73,13 @@ Logger:set_prefix(prefix)
 ```
 
 Sets the prefix for the logger. The prefix is logged alongside the log level in each message.
+
+```lua
+Logger:set_echo_messages(echo)
+```
+
+Sets whether the plugin should echo to messages in addition to vim.notify.
+Notifier plugins might override vim.notify and one might still want to see `:messages` history, this can come in handy
 
 ### Logging methods
 
